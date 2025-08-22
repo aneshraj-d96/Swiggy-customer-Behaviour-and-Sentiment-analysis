@@ -1,18 +1,31 @@
 # 🍽️ Swiggy Customer Behaviour and Sentiment Analysis
 
-An interactive analytics platform built to explore customer behavior, delivery performance, and sentiment trends across Bangalore's food delivery ecosystem. This project analyzes 200K+ orders to uncover insights on cuisine preferences, delivery ratings, payment methods, and customer sentiment.
+A full-stack analytics solution designed to explore customer behavior, delivery performance, and sentiment trends across Bangalore’s food delivery ecosystem. This project analyzes **200,000+ orders** to uncover insights on cuisine preferences, delivery ratings, payment methods, and customer sentiment—empowering operations teams and marketing strategists with predictive insights and interactive dashboards.
+
+---
+
+## 🚗 GitHub Project Repository  
+🔗 [Click to view Swiggy-customer-Behaviour-and-Sentiment-analysis](https://github.com/aneshraj-d96/Swiggy-customer-Behaviour-and-Sentiment-analysis)
 
 ---
 
 ## 🧠 Project Overview
 
-Understanding customer behavior is key to improving service quality and retention. This project analyzes Swiggy order data to identify patterns in delivery time, food ratings, payment preferences, and sentiment across demographics and locations.
+Customer satisfaction in food delivery hinges on speed, quality, and experience. This project delivers an end-to-end analytics platform that enables:
 
-### 🔍 Key Objectives
+- 📊 Behavioral analysis across demographics and locations  
+- 😊 Sentiment tracking and prediction  
+- 🕒 Delivery performance benchmarking  
+- 📍 Cuisine and payment preference mapping  
+
+---
+
+## 🎯 Key Objectives
+
 - Clean and preprocess customer order data  
-- Analyze sentiment and behavioral patterns  
-- Build predictive models for delivery satisfaction  
-- Deploy interactive dashboard and presentation for stakeholder insights  
+- Engineer features for delivery satisfaction modeling  
+- Build classification models to predict delivery ratings  
+- Deploy interactive dashboards for stakeholder decision-making  
 
 ---
 
@@ -27,14 +40,14 @@ Understanding customer behavior is key to improving service quality and retentio
 | `sqlconnect.py`                                          | Python script for SQL database connection                                  |
 | `app.py`                                                 | Streamlit app for dashboard deployment                                     |
 | `swiggy customer behaviour and sentiment analysis.ipynb` | Jupyter notebook with EDA, modeling, and insights                          |
-| `swiggy customer behaviour and sentiment analysis.pbix`  | PowerBI summarizing findings and business impact           |
+| `swiggy customer behaviour and sentiment analysis.pbix`  | Power BI dashboard visualizing customer trends and satisfaction metrics    |
 
 ---
 
 ## 🧹 Data Preprocessing
 
 - Converted `Order_Date` to datetime format  
-- Extracted time-based features (hour, day, month)  
+- Extracted time-based features (`hour`, `day`, `month`)  
 - Encoded categorical variables (`Cuisine_Type`, `Payment_Method`, `Sentiment`, `Gender`)  
 - Removed duplicates and handled missing values  
 - Normalized `Order_Value` and `Delivery_Time_Min` for modeling  
@@ -43,11 +56,11 @@ Understanding customer behavior is key to improving service quality and retentio
 
 ## 📈 Exploratory Data Analysis
 
-- Cuisine popularity across Bangalore areas  
-- Delivery time distribution by age and gender  
-- Sentiment trends by payment method and food rating  
-- Correlation between delivery rating and customer satisfaction  
-- Time-of-day impact on delivery performance  
+- 📍 Cuisine popularity across Bangalore areas  
+- 🕒 Delivery time distribution by age and gender  
+- 💳 Sentiment trends by payment method and food rating  
+- 😊 Correlation between delivery rating and customer satisfaction  
+- 📅 Time-of-day impact on delivery performance  
 
 ---
 
@@ -56,21 +69,37 @@ Understanding customer behavior is key to improving service quality and retentio
 - **Target Variable**: `Delivery_Rating`  
 - **Algorithms Used**: Random Forest, Logistic Regression  
 - **Evaluation Metrics**: Accuracy, Precision, Recall, F1 Score  
-- **Feature Importance**: `Delivery_Time_Min`, `Order_Value`, `Cuisine_Type`, `Sentiment`, `Customer_Age`  
+- **Top Features**: `Delivery_Time_Min`, `Order_Value`, `Cuisine_Type`, `Sentiment`, `Customer_Age`  
 
 ---
 
 ## 📊 Dashboard Overview
 
-Built using **Streamlit**, the dashboard includes:
+### 🔷 Power BI Dashboard  
+Visualizes customer behavior and delivery performance:
+
+- 📊 Cuisine preference by area  
+- ⏱️ Delivery time and rating analysis  
+- 💳 Payment method trends  
+- 😊 Sentiment distribution across demographics  
+- 📅 Monthly order volume and satisfaction metrics  
+
+![Power BI Preview](https://image2url.com/images/1755863744561-f7938bc8-a62f-444b-ae01-10ebf181f22e.png)  
+![Power BI Preview](https://image2url.com/images/1755864852413-9215d9da-2dc0-4c8a-8534-41bcd7ee9d33.png)
+
+---
+
+### 🟢 Streamlit App  
+Interactive dashboard for real-time customer insights:
 
 - 📍 Area-wise cuisine preferences  
 - 🕒 Delivery time and rating analysis  
-- 💳 Payment method trends  
-- 😊 Sentiment distribution across demographics  
-- 📊 Predictive insights on delivery satisfaction  
+- 💳 Payment method segmentation  
+- 😊 Sentiment prediction and visualization  
 
-> _Add your hosted dashboard screenshot or link here once available._
+![Streamlit Preview](https://image2url.com/images/1755864889746-9e0efb35-0865-4168-8617-b1a9184a0e2a.png)  
+![Streamlit Preview](https://image2url.com/images/1755864937500-2721b6be-d066-41b2-b846-da2dd7746720.png)  
+![Streamlit Preview](https://image2url.com/images/1755864964953-43aae3a9-88d7-445b-86b0-cdb396f7f0a8.png)
 
 ---
 
@@ -79,14 +108,14 @@ Built using **Streamlit**, the dashboard includes:
 - Model serialized with `joblib` as `rf_model.pkl`  
 - Dashboard deployed via **Streamlit Cloud**  
 - SQL integration for dynamic customer filtering  
-- Presentation deck created in PowerPoint for stakeholder review  
+- Power BI presentation deck created for stakeholder review  
 
 ---
 
 ## 🧠 Business Impact
 
 - Identifies key drivers of customer satisfaction  
-- Helps optimize delivery operations and service quality  
+- Optimizes delivery operations and service quality  
 - Supports targeted marketing based on sentiment and behavior  
 - Enables data-driven decisions for restaurant partnerships  
 
@@ -96,9 +125,8 @@ Built using **Streamlit**, the dashboard includes:
 
 - **Python**: Pandas, NumPy, Scikit-learn, Streamlit  
 - **SQL**: Data extraction and filtering  
-- **Visualization**: Matplotlib, Seaborn, Plotly  
+- **Visualization**: Power BI, Matplotlib, Seaborn, Plotly  
 - **Deployment**: Streamlit Cloud, GitHub  
-- **Bussiness visualization**:PowerBI  
 
 ---
 
@@ -114,6 +142,5 @@ Built using **Streamlit**, the dashboard includes:
 ## 👤 Author
 
 **Anesh Raj**  
-Data Analyst | Data Scientist | Business Analyst  
-Focused on multi-industry impact through predictive modeling and dashboarding.  
-📍 Chennai, India
+
+🔗 [GitHub Profile](https://github.com/aneshraj-d96)
